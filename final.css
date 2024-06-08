@@ -146,20 +146,32 @@ h2 {
   padding-top: 100px;
 }
 
+h5 {
+  font-size: 24px;
+  padding-bottom: 25px;
+}
+
+h6 {
+  padding: 25px 0px;
+}
+
 p {
   font-size: 16px;
   margin: auto;
   min-width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   line-height: 24px;
 }
 
-button {
-  border-radius: 35px;
-  min-width: 70%;
-  height: 6vh;
+hr {
+  width: 100%;
+  margin: 50px auto;
+}
+
+input {
+  font: 14px "Hellix";
   border: none;
-  font: 18px "Hellix";
+  color: #111235;
 }
 
 .main-div {
@@ -171,6 +183,13 @@ button {
   margin: 75px auto;
   width: 420px;
   background: linear-gradient(to right, #bad4ff, #6487bf);
+}
+
+.main-div3 {
+  margin: auto;
+  width: 420px;
+  padding: 0% 2%;
+  box-sizing: border-box;
 }
 
 .pg1-div {
@@ -224,14 +243,66 @@ button {
   box-sizing: border-box;
 }
 
+.pg4-text {
+  padding: 0px 10px 50px;
+  text-align: start;
+  width: 95%;
+  font-size: 48px;
+}
+
+.benefit-box {
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.benefit-box1 {
+  background-color: #e4f0ff;
+}
+
+.benefit-box2 {
+  background-color: #727aef1a;
+}
+
+.benefit-text {
+  padding: 50px 65px 30px 30px;
+  text-align: left;
+}
+
 .primary-btn {
-  margin-top: 15px;
+  border-radius: 35px;
+  min-width: 70%;
+  height: 6vh;
+  border: none;
+  font: 18px "Hellix";
+  margin: 30px 0px;
   color: #ffffff;
   background-color: #4b5092;
+  transition: 0.3s ease all;
 }
+
+.primary-btn:hover {
+  background-color: #7176bf;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
 .secondary-btn {
+  border-radius: 35px;
+  min-width: 70%;
+  height: 6vh;
+  border: none;
+  font: 18px "Hellix";
   color: #436baa;
   background-color: #ffffff;
+  transition: 0.3s ease all;
+}
+.secondary-btn:hover {
+  color: #436baa;
+  background-color: #d3d3d3;
+  cursor: pointer;
+  transition: 0.3s ease all;
 }
 
 .pg2-div {
@@ -245,5 +316,22 @@ button {
 
 .trainer-pic {
   padding-top: 40px;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
+}
+
+.footer-heading {
+  padding-bottom: 50px;
+}
+
+.footer-link {
+  background-color: white;
+  border: none;
+  font: 16px "Hellix";
+  color: #111235;
+  margin: auto;
+  display: block;
+  padding-bottom: 25px;
+}
+.footer-link:hover {
+  cursor: pointer;
 }
