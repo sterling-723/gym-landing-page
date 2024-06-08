@@ -141,31 +141,45 @@ span {
   font-weight: 700;
 }
 
-img {
-  width: 100%;
+h2 {
+  font-size: 48px;
+  padding-top: 100px;
 }
 
 p {
   font-size: 16px;
-  width: 30%;
   margin: auto;
+  min-width: 100%;
   padding-bottom: 25px;
+  line-height: 24px;
 }
 
 button {
   border-radius: 35px;
-  width: 20%;
+  min-width: 70%;
   height: 6vh;
   border: none;
   font: 18px "Hellix";
 }
 
 .main-div {
-  width: 30%;
   margin: auto;
+  width: 379px;
   padding: 1% 2%;
-  /* background-color: skyblue; */
-  box-sizing: border-box;
+}
+.main-div2 {
+  margin: 75px auto;
+  width: 420px;
+  background: linear-gradient(to right, #bad4ff, #6487bf);
+}
+
+.pg1-div {
+  margin: auto;
+  min-width: 100%;
+}
+
+.exc-pic {
+  width: 100%;
 }
 
 .heading {
@@ -177,12 +191,59 @@ button {
   padding-bottom: 20px;
 }
 
-.pg1-text {
-  padding: 0px 0px 10px;
+.pg-text {
   font-weight: 400;
+  width: 100%;
+  padding: 0px 0px 10px;
+}
+
+.pg1-text {
+  margin: auto;
+  width: 90%;
+  font-size: 64px;
+}
+
+.pg2-text {
+  padding: 40px 0px 10px;
+  text-align: start;
+  width: 95%;
   font-size: 48px;
 }
+
+.pg2-p {
+  text-align: start;
+}
+
+.pg3-p {
+  padding: 10px 0px 20px;
+  font-size: 18px;
+}
+
+.pg3-p2 {
+  padding: 0px 10px 30px;
+  box-sizing: border-box;
+}
+
 .primary-btn {
+  margin-top: 15px;
   color: #ffffff;
   background-color: #4b5092;
+}
+.secondary-btn {
+  color: #436baa;
+  background-color: #ffffff;
+}
+
+.pg2-div {
+  padding-top: 125px;
+}
+
+.pg3-div {
+  margin: auto;
+  width: 100%;
+}
+
+.trainer-pic {
+  padding-top: 40px;
+  margin-bottom: -5px;
 }
