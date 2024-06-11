@@ -135,6 +135,7 @@ body {
   color: #111235;
   font-family: "Hellix";
   font-weight: 400;
+  background-color: #e5e5e5;
 }
 
 span {
@@ -152,7 +153,8 @@ h5 {
 }
 
 h6 {
-  padding: 25px 0px;
+  padding: 25px 0px 30px;
+  font: 500 18px "Hellix";
 }
 
 p {
@@ -169,9 +171,12 @@ hr {
 }
 
 input {
+  background-color: #e5e5e5;
   font: 14px "Hellix";
   border: none;
+  height: 100%;
   color: #111235;
+  width: 100%;
 }
 
 .main-div {
@@ -324,7 +329,7 @@ input {
 }
 
 .footer-link {
-  background-color: white;
+  background-color: #e5e5e5;
   border: none;
   font: 16px "Hellix";
   color: #111235;
@@ -334,4 +339,37 @@ input {
 }
 .footer-link:hover {
   cursor: pointer;
+}
+
+.form-div {
+  display: flex;
+  height: 10vh;
+  margin: auto;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.send-btn {
+  background-color: #e5e5e5;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-div {
+  margin: 30px auto 50px;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  background-color: #e5e5e5;
+  border: none;
+  cursor: pointer;
+}
+
+#copyright {
+  font-size: 14px;
+  margin-bottom: 4vh;
 }
