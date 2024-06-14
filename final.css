@@ -373,3 +373,77 @@ input {
   font-size: 14px;
   margin-bottom: 4vh;
 }
+
+@media only screen and (min-width: 1285px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    height: 100vh;
+  }
+
+  .desktop-div1 {
+    box-sizing: border-box;
+    text-align: left;
+    width: 50%;
+    background-color: red;
+    padding: 25px 100px 0px 100px;
+  }
+  .desktop-div2 {
+    box-sizing: border-box;
+    padding: 25px 100px 0px 100px;
+    text-align: left;
+    width: 50%;
+    background-color: blue;
+  }
+
+  .pg-text {
+    margin: 100px 0px;
+  }
+
+  .first-paragraph {
+    box-sizing: border-box;
+    padding-right: 50px;
+  }
+
+  .header-links {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .link {
+    background-color: #e5e5e5;
+    border: none;
+    font: 16px "Hellix";
+    color: #111235;
+    padding: 0 20px;
+  }
+
+  .primary-btn {
+    min-width: 250px;
+  }
+
+  #situp-pic {
+    box-sizing: border-box;
+    padding: 25px;
+  }
+
+  #search-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    transform: translateY(-10px);
+  }
+}
