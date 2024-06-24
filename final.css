@@ -135,7 +135,7 @@ body {
   color: #111235;
   font-family: "Hellix";
   font-weight: 400;
-  background-color: #e5e5e5;
+  background: linear-gradient(45deg, #eef5ff, #ffffff);
 }
 
 span {
@@ -153,7 +153,7 @@ h5 {
 }
 
 h6 {
-  padding: 25px 0px 30px;
+  padding: 25px 0px 10px;
   font: 500 18px "Hellix";
 }
 
@@ -166,17 +166,26 @@ p {
 }
 
 hr {
+  border-color: #0000004d;
   width: 100%;
   margin: 50px auto;
 }
 
 input {
-  background-color: #e5e5e5;
   font: 14px "Hellix";
   border: none;
-  height: 100%;
+  height: 80%;
   color: #111235;
   width: 100%;
+  background-color: #ffffff00;
+}
+
+input:focus {
+  outline: none;
+}
+
+.desktop {
+  display: none;
 }
 
 .main-div {
@@ -200,6 +209,13 @@ input {
 .pg1-div {
   margin: auto;
   min-width: 100%;
+}
+
+#situp-div {
+  width: 45%;
+}
+#lunge-div {
+  width: 45%;
 }
 
 .exc-pic {
@@ -329,7 +345,7 @@ input {
 }
 
 .footer-link {
-  background-color: #e5e5e5;
+  background-color: #ffffff00;
   border: none;
   font: 16px "Hellix";
   color: #111235;
@@ -351,9 +367,10 @@ input {
 }
 
 .send-btn {
-  background-color: #e5e5e5;
+  background-color: #ffffff00;
   border: none;
   cursor: pointer;
+  transform: translateY(-5px);
 }
 
 .icon-div {
@@ -364,7 +381,7 @@ input {
 }
 
 .icon {
-  background-color: #e5e5e5;
+  background-color: #ffffff00;
   border: none;
   cursor: pointer;
 }
@@ -374,115 +391,240 @@ input {
   margin-bottom: 4vh;
 }
 
-@media only screen and (min-width: 1650px) {
-  * {
-    margin: 0;
-    padding: 0;
+@media only screen and (min-width: 1345px) {
+  input {
+    margin-top: 20px;
+  }
+  #div1,
+  #div2,
+  #div5,
+  #div6 {
+    padding: 20px 8% 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  header {
+  #div5 {
+    padding: 100px 8% 35px 10%;
+  }
+
+  #div3 {
+    padding: 20px 8% 70px 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #footer-div {
+    padding: 0px 8% 100px;
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+  }
+
+  #footer-1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 175px;
+  }
+
+  #footer-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+
+  #footer-3 {
+    width: 20%;
+    text-align: left;
+  }
+
+  .footer-link {
+    margin: 0;
+  }
+
+  #div4 {
+    display: flex;
+    background: linear-gradient(to right, #bad4ff, #6487bf);
+  }
+
+  #strong-div {
+    text-align: left;
+    box-sizing: border-box;
+    width: 50%;
   }
   .mobile {
     display: none;
   }
 
   .desktop {
-    display: flex;
-    height: 100vh;
+    display: contents;
   }
 
-  .desktop-div1 {
-    box-sizing: border-box;
-    text-align: left;
-    width: 50%;
-    padding: 25px 100px 0px 100px;
-  }
-  .desktop-div2 {
-    box-sizing: border-box;
-    padding: 25px 100px 0px 100px;
-    text-align: left;
-    width: 50%;
+  .pg1-text,
+  .pg1-heading {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 
-  .pg-text {
-    margin: 75px 0px 25px;
+  .pg1-text {
+    line-height: 60px;
   }
 
   .first-paragraph {
-    box-sizing: border-box;
-    padding-right: 50px;
+    margin: 0;
+    min-width: 0%;
+    padding: 20px 100px 0px 0px;
+    width: 80%;
   }
 
-  .header-links {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  #nav-link-div {
+    justify-content: space-between;
   }
 
   .link {
-    background-color: #e5e5e5;
+    background-color: #ffffff00;
     border: none;
     font: 16px "Hellix";
     color: #111235;
-    padding: 0 20px;
-  }
-
-  .primary-btn {
-    min-width: 250px;
-    display: block;
-  }
-
-  #situp-pic {
-    box-sizing: border-box;
-    padding: 50px;
-  }
-
-  #lunge-pic {
-    width: 75%;
-    padding: 325px 25px 25px 340px;
+    padding: 0 25px;
   }
 
   #search-icon {
     position: absolute;
     height: 20px;
     width: 20px;
-    transform: translateY(-10px);
+    transform: translateY(-13px);
   }
 
-  .benefit-box2 {
-    margin-top: 100px;
-    box-sizing: border-box;
-    width: 75%;
-    min-width: 200px;
+  .primary-btn,
+  .secondary-btn {
+    min-width: 42%;
   }
 
   .pg2-text {
     box-sizing: border-box;
-    padding: 50px 150px 0px 40px;
-    margin-top: 0px;
+    padding: 0px 50px 0px 0px;
+    text-align: start;
+    width: 100%;
+    font-size: 48px;
   }
+
   .pg2-p {
+    padding-top: 20px;
+  }
+
+  #choose-div {
+    width: 50%;
+    border-radius: 50px;
     box-sizing: border-box;
-    padding: 0px 75px 50px 40px;
+    background-color: #f2f8ff;
+    padding: 40px 50px;
   }
 
   .trainer-div {
-    margin-top: 300px;
-    justify-content: center;
-    display: flex;
-    background: linear-gradient(to right, #bad4ff, #6487bf);
+    width: 50%;
+    padding-left: 15%;
   }
 
   .trainer-pic {
-    margin-left: 15%;
-    width: 75%;
+    padding: 0;
   }
 
-  .trainer-text {
-    text-align: start;
+  .pg3-div {
+    text-align: left;
     width: 50%;
-    padding-right: 200px;
+  }
+
+  h2 {
+    padding: 0px;
+  }
+
+  .pg3-p2 {
+    padding: 10px 100px 20px 0px;
+  }
+
+  #benefit-div {
+    width: 50%;
+  }
+  #get-now-div {
+    width: 50%;
+  }
+
+  .pg4-text {
+    padding: 0px;
+  }
+
+  #get-now-div {
+    width: 20%;
+  }
+
+  .get-now-btn {
+    width: 100%;
+  }
+
+  #grid-container {
+    display: grid;
+    width: 65%;
+    text-align: left;
+    grid-template-columns: auto auto;
+    gap: 25px 10px;
+  }
+
+  .benefit-box {
+    margin: 0px;
+    padding: 40px;
+    width: 100%;
+  }
+
+  #mental > h5 {
+    padding-right: 20px;
+  }
+
+  #friends {
+    box-sizing: border-box;
+  }
+
+  hr {
+    margin-top: 0;
+    width: 82%;
+    border-color: #0000004d;
+  }
+
+  #copyright {
+    transform: translatex(10px);
+  }
+
+  #mobile-up-to-date {
+    padding: 0;
+  }
+
+  .form-div {
+    display: flex;
+    height: 10vh;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .send-btn {
+    transform: translate(-30px, -7px);
+  }
+
+  .icon-div {
+    margin: 0;
+    width: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
   }
 }
